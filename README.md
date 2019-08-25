@@ -4,12 +4,18 @@
 
 ## build
 
-```sh npm run build```
+```sh 
+npm run build
+```
 
 ## dev
 
-```sh npm run start```
+```sh 
+npm run start
+```
 
 ## node
 
-```sh npm run serve```
+```sh 
+npm run serve
+```
