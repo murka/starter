@@ -7,11 +7,9 @@
   "author": "Daniel Murka <d.shaymurzin@aliase.net>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.ts"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.5.1",
-    "typescript": "^3.6.0-dev.20190726"
+    "build": "tsc",
+    "serve": "node ./dist",
+    "start": "npm run build --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -20,10 +18,10 @@
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.7.2",
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.0.0",
-    "nodemon": "^1.19.1",
-    "source-map": "^0.7.3"
+    "typescript": "^3.7.0-dev.20190824"
   }
 }

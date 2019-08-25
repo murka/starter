@@ -5,12 +5,14 @@
     "importHelpers": true,
     "pretty": true,
     "sourceMap": true,
+    "outDir": "dist",
     "lib": [
       "esnext",
-      "esnext.AsyncIterable",
-      "esnext.Array",
-      "esnext.Intl",
-      "esnext.Symbol"
+      "esnext.asynciterable",
+      "esnext.array",
+      "esnext.bigint",
+      "esnext.intl",
+      "esnext.symbol"
     ]
   },
 
