@@ -8,8 +8,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "serve": "node ./dist",
-    "start": "npm run build --watch"
+    "serve": "node ./dist/*",
+    "start": "yarn build --watch",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -18,10 +19,13 @@
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.18",
     "@types/node": "^12.7.2",
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.0.0",
-    "typescript": "^3.7.0-dev.20190824"
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
   }
 }

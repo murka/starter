@@ -16,6 +16,12 @@ npm run start
 
 ## node
 
-```sh
+```sh 
 npm run serve
+```
+
+## test
+
+```sh 
+npm run test
 ```

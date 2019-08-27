@@ -1,2 +1,2 @@
 const name: string = 'Danil'
-console.log(`Nice to meet you, ${name}`)
+console.log(`Hello, my name is ${name}. Nice to meet you.`)
