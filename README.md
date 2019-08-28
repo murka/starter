@@ -25,3 +25,9 @@ npm run serve
 ```sh 
 npm run test
 ```
+
+## lint
+
+```sh 
+npm run lint
+```
