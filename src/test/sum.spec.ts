@@ -1,4 +1,4 @@
-import { sum } from '../sum'
+import sum from '../sum'
 
 test('empty adds equal to 0', () => {
     expect(sum()).toBe(0)

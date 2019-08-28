@@ -7,11 +7,12 @@
   "author": "Daniel Murka <d.shaymurzin@aliase.net>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "serve": "node ./dist/*",
     "start": "yarn build --watch",
     "test": "jest",
-    "test:cov": "yarn test --coverage"
+    "test:cov": "yarn test --coverage",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -22,11 +23,24 @@
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.2",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.0.0",
     "jest": "^24.9.0",
+    "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
+    "tslint": "^5.19.0",
     "typescript": "^3.5.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
   }
 }
