@@ -6,3 +6,4 @@ dist
 
 # files
 yarn-error.log
+yarn.lock

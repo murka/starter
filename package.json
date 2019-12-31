@@ -2,12 +2,12 @@
   "name": "starter",
   "version": "0.0.0",
   "description": "starter",
-  "main": "src/index.ts",
+  "main": "dist/*",
   "repository": "https://gitlab.com/murka/starter.git",
-  "author": "Daniel Murka <d.shaymurzin@aliase.net>",
+  "author": "Danil Shaymurzin <d.shaymurzin@aliase.net>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc",
     "serve": "node ./dist/*",
     "start": "yarn build --watch",
     "test": "jest",
@@ -15,16 +15,9 @@
     "lint": "tslint -p tsconfig.json -c tslint.json"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.0",
-    "@babel/node": "^7.5.0",
-    "@babel/plugin-transform-runtime": "^7.5.0",
-    "@babel/preset-env": "^7.5.0",
-    "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.2",
     "jest": "^24.9.0",
-    "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
     "tslint": "^5.19.0",
     "typescript": "^3.5.3"
